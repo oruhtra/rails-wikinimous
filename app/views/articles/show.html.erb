@@ -1,0 +1,26 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3">
+        <h1 class="title-card text-center"><%= @article.title %></h1>
+        <p class="content-card"><%= @article.content %></p>
+        <ul class="list-inline text-center flex-center">
+
+          <%= link_to article_path(@article),
+          method: :delete,
+          data: { confirm: "Are you sure?" } do %>
+            <i class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
+          <% end %>
+
+          <%= link_to edit_article_path(@article) do %>
+          <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>
+          <% end %>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <%= link_to "Back to all articles", articles_path %>
+</div>

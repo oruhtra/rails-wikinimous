@@ -1,0 +1,66 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+a:hover {
+  text-decoration: none;
+}
+
+.article-card {
+  color: black;
+  padding: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.article-card:hover {
+  background-color: #FCEAC2;
+}
+
+.article-title {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.article-content {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.article-new {
+  color: white;
+  background-color: #3464E1;
+  padding: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.article-new:hover {
+  opacity: 0.8
+}
+
+.title-card {
+  padding: 10px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.content-card {
+  font-size: 15px;
+  font-weight: normal;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 50px
+}
+
+.flex-center > i:hover {
+  color: rgba(0,0,0,0.3);
+}

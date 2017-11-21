@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <ul class="list-unstyled">
+        <%= link_to new_article_path do %>
+          <li class="article-new text-center">Write an article</li>
+        <% end %>
+        <% @articles.each do |a| %>
+         <%= link_to article_path(a) do %>
+            <li>
+              <div class="article-card">
+                <p class="article-title"><%= a.title %></p>
+                <p class="article-content"><%= a.content %></p>
+              </div>
+            </li>
+          <% end %>
+        <% end %>
+
+      </ul>
+    </div>
+  </div>
+</div>

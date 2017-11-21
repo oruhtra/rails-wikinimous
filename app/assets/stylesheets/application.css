@@ -13,3 +13,5 @@
  *= require_tree .
  *= require_self
  */
+require_relative 'footer'
+require_relative 'wrapper'
